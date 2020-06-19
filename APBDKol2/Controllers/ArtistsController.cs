@@ -31,7 +31,7 @@ namespace APBDKol2.Controllers
         }
 
         [HttpPut("{IdArtist:int}/events/{IdEvent:int}")]
-        public IActionResult UpdateArtistsPerformanceDate(UpdateDateRequest request, int IdArtist, int IdEvent)
+        public IActionResult UpdateArtistsPerformanceDate(int IdArtist, int IdEvent, UpdateDateRequest request)
         {
             try
             {
