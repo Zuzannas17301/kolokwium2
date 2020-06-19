@@ -6,6 +6,6 @@ namespace APBDKol2.Services
     public interface IDbService
     {
          Artist GetArtist(int id);
-         void UpdateArtistsPerformanceDate(UpdateDateRequest request, int idArtist, int idEvent);
+         void UpdateArtistsPerformanceDate(int idArtist, int idEvent,UpdateDateRequest request);
     }
 }

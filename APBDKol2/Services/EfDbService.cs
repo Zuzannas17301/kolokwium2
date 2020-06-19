@@ -32,7 +32,7 @@ namespace APBDKol2.Services
             return artist;
         }
 
-        public void UpdateArtistsPerformanceDate(UpdateDateRequest request, int idArtist, int idEvent)
+        public void UpdateArtistsPerformanceDate(int idArtist, int idEvent,UpdateDateRequest request)
         {
             var artist = _context.Artist
                 .SingleOrDefault(e => e.IdArtist == idArtist);
