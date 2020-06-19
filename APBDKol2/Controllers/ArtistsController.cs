@@ -35,7 +35,7 @@ namespace APBDKol2.Controllers
         {
             try
             {
-                _service.UpdateArtistsPerformanceDate(request, IdArtist, IdEvent);
+                _service.UpdateArtistsPerformanceDate(IdArtist, IdEvent, request);
                 return NoContent();
             }
             catch (ArtistDoesNotExistException e)
